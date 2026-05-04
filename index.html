@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aniket Turke — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AT<span class="dot">.</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <!-- Animated grid background -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Floating glow orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- PROFILE IMAGE: Replace src below with your actual photo path, e.g. src="assets/profile.jpg" -->
+      <div class="profile-ring">
+        <img
+          src="WhatsApp Image 2026-05-04 at 11.32.57 AM.jpeg"
+          alt="Aniket Turke profile photo"
+          class="profile-img"
+        />
+        <div class="ring-glow" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Aniket<br /><span class="name-highlight">Turke</span></h1>
+        <p class="hero-title">
+          <span class="title-tag">&lt;</span>
+          Video Editor &amp; Developer
+          <span class="title-tag">/&gt;</span>
+        </p>
+        <p class="hero-sub">1st Year BTech · MITOE Pune · Turning frames &amp; functions into art.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-card glass-card fade-in">
+          <div class="about-icon">🎬</div>
+          <h3>Creative Vision</h3>
+          <p>I am a passionate <strong>video editor</strong> who crafts compelling stories through visuals. CapCut, After Effects, and Premiere Pro are my paintbrushes.</p>
+        </div>
+        <div class="about-card glass-card fade-in delay-1">
+          <div class="about-icon">💻</div>
+          <h3>Code &amp; Logic</h3>
+          <p>I am equally fascinated by the world of <strong>coding</strong>. Python, HTML, and CSS help me build functional, beautiful digital experiences.</p>
+        </div>
+        <div class="about-card glass-card fade-in delay-2">
+          <div class="about-icon">🚀</div>
+          <h3>Ambition</h3>
+          <p>My aspiration is to become a <strong>professional video editor</strong> and a <strong>skilled programmer</strong> — merging creativity and logic into a unique career.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">My Arsenal</h2>
+      <div class="skills-grid">
+
+        <!-- Video Editing -->
+        <div class="skill-block glass-card fade-in">
+          <div class="skill-header">
+            <span class="skill-icon">🎞️</span>
+            <h3>Video Editing</h3>
+          </div>
+          <div class="skill-tools">
+            <span class="tool-badge">CapCut</span>
+            <span class="tool-badge">After Effects</span>
+            <span class="tool-badge">Premiere Pro</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct: 85%"></div>
+          </div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-block glass-card fade-in delay-1">
+          <div class="skill-header">
+            <span class="skill-icon">🐍</span>
+            <h3>Python</h3>
+          </div>
+          <div class="skill-tools">
+            <span class="tool-badge">Scripting</span>
+            <span class="tool-badge">Automation</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct: 70%"></div>
+          </div>
+          <span class="skill-pct">70%</span>
+        </div>
+
+        <!-- HTML -->
+        <div class="skill-block glass-card fade-in delay-2">
+          <div class="skill-header">
+            <span class="skill-icon">🌐</span>
+            <h3>HTML</h3>
+          </div>
+          <div class="skill-tools">
+            <span class="tool-badge">Semantic Markup</span>
+            <span class="tool-badge">Accessibility</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct: 80%"></div>
+          </div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-block glass-card fade-in delay-3">
+          <div class="skill-header">
+            <span class="skill-icon">🎨</span>
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-tools">
+            <span class="tool-badge">Animations</span>
+            <span class="tool-badge">Responsive</span>
+            <span class="tool-badge">Glassmorphism</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct: 78%"></div>
+          </div>
+          <span class="skill-pct">78%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-label">03 / Education</div>
+      <h2 class="section-title">Academic Journey</h2>
+      <div class="timeline">
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2024 – Present</span>
+            <h3>BTech — Computer Engineering</h3>
+            <p class="timeline-place">MITOE (MIT College of Engineering), Pune</p>
+            <p class="timeline-note">1st Year · Currently pursuing undergraduate studies.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2024</span>
+            <h3>12th Standard (HSC)</h3>
+            <p class="timeline-place">Maharashtra State Board</p>
+            <div class="score-row">
+              <span class="score-badge">HSC: 80%</span>
+              <span class="score-badge highlight">MHT-CET: 95 Percentile</span>
+              <span class="score-badge">NEET: 430 Marks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2022</span>
+            <h3>10th Standard (SSC)</h3>
+            <p class="timeline-place">Maharashtra State Board</p>
+            <div class="score-row">
+              <span class="score-badge highlight">SSC: 94%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-label">04 / Certifications</div>
+      <h2 class="section-title">Credentials</h2>
+      <div class="cert-grid">
+
+        <!-- CERTIFICATE IMAGE: Replace src below with your actual NASSCOM certificate image path -->
+        <div class="cert-card glass-card fade-in">
+          <a href="https://drive.google.com/file/d/1FsKc21hrfraRnDEli3do_dsAEMk1Qtzj/view?usp=drive_link" target="_blank" class="cert-btn">
+  View Certificate
+</a>
+          <div class="cert-info">
+            <span class="cert-org">NASSCOM</span>
+            <h3 class="cert-title">NASSCOM Certification</h3>
+            <span class="cert-tag">Technology</span>
+          </div>
+        </div>
+
+        <!-- CERTIFICATE IMAGE: Replace src below with your actual Anthropic certificate image path -->
+        <div class="cert-card glass-card fade-in delay-1">
+          <a href="https://drive.google.com/file/d/1Ax5PCptLCjV6tHIyAT21az_27PUW7qYu/view?usp=drive_link" target="_blank" class="cert-btn">
+            View Certificate
+            </a>
+          <div class="cert-info">
+            <span class="cert-org">Anthropic</span>
+            <h3 class="cert-title">Anthropic Certification</h3>
+            <span class="cert-tag">AI &amp; Machine Learning</span>
+          </div>
+        </div>
+
+        <!-- CERTIFICATE IMAGE: Replace src below with your actual Cisco certificate image path -->
+        <div class="cert-card glass-card fade-in delay-2">
+          <a href="https://drive.google.com/file/d/1ouCZRHprq5GhRRKoD0_-JuqLrbaFLIxH/view?usp=drive_link" target="_blank" class="cert-btn">
+  View Certificate
+</a>
+          <div class="cert-info">
+            <span class="cert-org">Cisco</span>
+            <h3 class="cert-title">Cisco Certification</h3>
+            <span class="cert-tag">Networking</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label">05 / Projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card fade-in">
+          <div class="project-accent" style="--accent: #4fa3ff;"></div>
+          <div class="project-top">
+            <span class="project-icon">🎬</span>
+            <div class="project-links">
+              <span class="project-link-icon" title="Source / Demo">↗</span>
+            </div>
+          </div>
+          <h3 class="project-name">Cinematic Edit Reel</h3>
+          <p class="project-desc">A personal showreel showcasing video editing skills — cuts, color grading, motion graphics using Premiere Pro and After Effects.</p>
+          <div class="project-tags">
+            <span>Premiere Pro</span><span>After Effects</span><span>Color Grading</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card fade-in delay-1">
+          <div class="project-accent" style="--accent: #00e5ff;"></div>
+          <div class="project-top">
+            <span class="project-icon">🐍</span>
+            <div class="project-links">
+              <span class="project-link-icon" title="Source / Demo">↗</span>
+            </div>
+          </div>
+          <h3 class="project-name">Python Automation Scripts</h3>
+          <p class="project-desc">A collection of Python scripts to automate repetitive tasks — file organizer, web scraper, and a simple data analyser.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Automation</span><span>Scripting</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card fade-in delay-2">
+          <div class="project-accent" style="--accent: #a78bfa;"></div>
+          <div class="project-top">
+            <span class="project-icon">🌐</span>
+            <div class="project-links">
+              <span class="project-link-icon" title="Source / Demo">↗</span>
+            </div>
+          </div>
+          <h3 class="project-name">Personal Portfolio Website</h3>
+          <p class="project-desc">This very website — built with pure HTML &amp; CSS, featuring glassmorphism design, smooth animations, and full responsiveness.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>Responsive</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card fade-in delay-3">
+          <div class="project-accent" style="--accent: #34d399;"></div>
+          <div class="project-top">
+            <span class="project-icon">✂️</span>
+            <div class="project-links">
+              <span class="project-link-icon" title="Source / Demo">↗</span>
+            </div>
+          </div>
+          <h3 class="project-name">Short-Form Content Creation</h3>
+          <p class="project-desc">Edited 30+ short-form videos for social media using CapCut — trending transitions, subtitles, and engaging hooks.</p>
+          <div class="project-tags">
+            <span>CapCut</span><span>Social Media</span><span>Editing</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-label">06 / Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+      <div class="contact-grid">
+
+        <div class="contact-card glass-card fade-in">
+          <span class="contact-icon">📧</span>
+          <h3>Email</h3>
+          <!-- Replace with your actual email address -->
+          <a href="mailto:202501040257@mitaoe.ac.in" class="contact-link">202501040257@mitaoe.ac.in</a>
+        </div>
+
+        <div class="contact-card glass-card fade-in delay-1">
+          <span class="contact-icon">💼</span>
+          <h3>LinkedIn</h3>
+          <!-- Replace with your actual LinkedIn URL -->
+          <a href="https://linkedin.com/in/aniketturke" class="contact-link" target="_blank" rel="noopener">linkedin.com/in/aniketturke</a>
+        </div>
+
+        <div class="contact-card glass-card fade-in delay-2">
+          <span class="contact-icon">🐙</span>
+          <h3>GitHub</h3>
+          <!-- Replace with your actual GitHub URL -->
+          <a href="https://github.com/202501040257-tech/aniket.github.io" class="contact-link" target="_blank" rel="noopener">https://github.com/202501040257-tech/aniket.github.io</a>
+        </div>
+
+        <div class="contact-card glass-card fade-in delay-3">
+          <span class="contact-icon">📍</span>
+          <h3>Location</h3>
+          <p class="contact-link">Pune, Maharashtra, India</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo">AT<span class="dot">.</span></a>
+      <p class="footer-copy">© 2025 Aniket Turke — Crafted with <span class="heart">♥</span> using pure HTML &amp; CSS</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
